@@ -2,15 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Sidebar from './components/Sidebar/Sidebar';
+import Feed from './components/Feed/Feed';
+import Widgets from './components/Widgets/Widgets';
 
 function App() {
   return (
     <div className="App">
-      Twitter Clone! 
       {/* Sidebar */}
       <Sidebar/>
       {/* Feed */}
+      <Feed/>
       {/* Widgets */}
+      <Widgets/>
     </div>
   );
 }

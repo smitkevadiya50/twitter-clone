@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../css/Sidebar.css'
+import '../../css/Sidebar/Sidebar.css'
 import TwitterIcon from '@mui/icons-material/Twitter';
 import HomeIcon from '@mui/icons-material/HomeOutlined'
 import Search from '@mui/icons-material/Search'
@@ -14,8 +14,8 @@ import SidebarOpction from './SidebarOpction';
 function Sidebar() {
   return (
     <div className='sidebar'>
-      <TwitterIcon/>
-      <SidebarOpction name='Home' icon={HomeIcon}/>
+      <TwitterIcon className='sidebar-twitterIcon'/>
+      <SidebarOpction active name='Home' icon={HomeIcon}/>
       <SidebarOpction name='Explore' icon={Search}/>
       <SidebarOpction name='Notifications' icon={Notifications}/>
       <SidebarOpction name='Messages' icon={MailOutline}/>
@@ -23,6 +23,8 @@ function Sidebar() {
       <SidebarOpction name='Lists' icon={ListAlt}/>
       <SidebarOpction name='Profile' icon={PermIdentity}/>
       <SidebarOpction name='More' icon={MoreHoriz}/>
+
+      <button className='sidebar-tweet'>Tweet</button>
     </div>
   )
 }
