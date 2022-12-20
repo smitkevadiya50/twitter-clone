@@ -20,14 +20,13 @@ export default function Post(props: Props) {
   return (
     <div className='post'>
       <div className="post-avatar">
-        <Avatar alt='D' src=""></Avatar>
+        <Avatar alt='D' src="{props.avatar}"></Avatar>
       </div>
       <div className="post-body">
         <div className="post-header">
             <div className="post-header-text">
               <h3>
-              {props.displayName} <span><Verified/></span> 
-              {props.userName}
+              {props.displayName} <span className='post-header-special'><Verified className='verified-icon'/> {props.userName}</span> 
               </h3>
             </div>
             <div className="post-header-description">
