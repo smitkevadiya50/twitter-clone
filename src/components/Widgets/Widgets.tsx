@@ -12,8 +12,8 @@ export default function Widgets() {
       </div>
       <div className="widgets-widget-container">
         <h2>Whats's happening</h2>
-        <TwitterTweetEmbed tweetId={"1563406558154739718"}/>
-        <TwitterTweetEmbed tweetId={"1417485720713900045"}/>
+        <TwitterTweetEmbed tweetId={"1508838714180612100"}/>
+        <TwitterTweetEmbed tweetId={"1601328677677338624"}/>
       </div>
     </div>
   )
